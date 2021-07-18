@@ -1,7 +1,7 @@
 
 /*
     REPLACE: With your package id
-    IMPORT: User
+    IMPORTANT / IMPORT: User , Storage
  */
 package com.example.templates.utils
 import com.example.templates.models.User
@@ -22,6 +22,8 @@ object Session: RequiresLogger{
     var status = LOGGED_OUT
     private var _user: User? = null
     var username: String? = null
+    
+    /* IMPORT: Storage */
     lateinit var storage: Storage
 
     val isLoggedIn: Boolean
